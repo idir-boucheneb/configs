@@ -1,0 +1,346 @@
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "m",
+                "h"
+            ],
+            "after": [
+                "<Esc>",
+                "h",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "j"
+            ],
+            "after": [
+                "<Esc>",
+                "j",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "k"
+            ],
+            "after": [
+                "<Esc>",
+                "k",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "l"
+            ],
+            "after": [
+                "<Esc>",
+                "l",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "<ctrl>",
+                "m"
+            ],
+            "after": [
+                "<Esc>",
+                "m",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "w"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "e"
+            ],
+            "after": [
+                " ",
+                "=",
+                " "
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "c"
+            ],
+            "after": [
+                "("
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "x"
+            ],
+            "after": [
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "v"
+            ],
+            "after": [
+                "["
+            ]
+        },
+        {
+            "before": [
+                "w",
+                "x"
+            ],
+            "after": [
+                "-",
+                ">"
+            ]
+        },
+        {
+            "before": [
+                ".",
+                "'"
+            ],
+            "after": [
+                ";"
+            ]
+        },
+        {
+            "before": [
+                "q",
+                "s"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "'",
+                "'"
+            ],
+            "after": [
+                "\""
+            ]
+        },
+        {
+            "before": [
+                ".",
+                "."
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                "?",
+                "'"
+            ],
+            "after": [
+                ","
+            ]
+        },
+        {
+            "before": [
+                "?",
+                "p"
+            ],
+            "after": [
+                " + "
+            ]
+        },
+        {
+            "before": [
+                "?",
+                "m"
+            ],
+            "after": [
+                "-"
+            ]
+        },
+        {
+            "before": [
+                "?",
+                "l"
+            ],
+            "after": [
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "t"
+            ],
+            "after": [
+                "\\"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "z",
+                "s",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "z",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "z",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.nextInFiles"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "z",
+                "d",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.debug.restart"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "z",
+                "q"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "g",
+                "c"
+            ],
+            "after": [
+                "f",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "v"
+            ],
+            "after": [
+                "f",
+                "["
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "after": [
+                "%"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "n"
+            ],
+            "after": [
+                "*"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "s"
+            ],
+            "after": [
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "k"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "j"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<Ctrl>",
+                "x"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "after": [
+                "%"
+            ]
+        },
+    ],
