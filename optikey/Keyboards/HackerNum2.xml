@@ -1,18 +1,20 @@
 <!-- Copyright (c) 2022 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved -->
 <Keyboard>
-    <Name>HackerNum</Name>
-
-
-    <!-- <ShowOutputPanel>True</ShowOutputPanel> -->
-    <SymbolMargin>10</SymbolMargin>
+    <Name>HackerNum2</Name>
+    <SymbolMargin>20</SymbolMargin>
     <BorderThickness>1,1,1,1</BorderThickness>
+    <HideFromKeyboardMenu>true</HideFromKeyboardMenu>
     <Grid>
         <Rows>4</Rows>
-        <Cols>20</Cols>
+        <Cols>18</Cols>
     </Grid>
     <Content>
         <!-- First row -->
-        <DynamicKey Row="0" Col="0" Width="2">
+        <DynamicKey Row="0" Col="0">
+            <Label>é</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>é</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey Width="2">
             <Symbol>BrowserBackIcon</Symbol>
@@ -20,18 +22,17 @@
         </DynamicKey>
         <DynamicKey>
             <Label>@</Label>
+            <ShiftDownLabel></ShiftDownLabel>
             <Text>@</Text>
-            <ShiftDownLabel></ShiftDownLabel>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey>
-            <Label>"</Label>
-            <Text>"</Text>
+            <Label>^</Label>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>^</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey>
-            <Label>%</Label>
-            <Text>%</Text>
-            <ShiftDownLabel>A</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Symbol>EndIcon</Symbol>
@@ -49,44 +50,56 @@
         </DynamicKey>
         <DynamicKey>
             <Label>+</Label>
-            <Text>+</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>+</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>-</Label>
-            <Text>-</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>-</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>7</Label>
-            <Text>7</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>7</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>8</Label>
-            <Text>8</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>8</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>9</Label>
-            <Text>9</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>9</Text>
         </DynamicKey>
         <DynamicKey Width="2">
             <Action>BackOne</Action>
             <Symbol>BackOneIcon</Symbol>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <Label>è</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>è</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
 
         <!-- Second row -->
-        <DynamicKey Row="1" Col="0" Width="2">
+        <DynamicKey Row="1" Col="0">
+            <Label>à</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>à</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey Width="2">
             <Symbol>TabIcon</Symbol>
             <Text>&#9;</Text>
         </DynamicKey>
         <DynamicKey>
+            <Label>ù</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>ù</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey>
             <DynamicKey>
@@ -116,33 +129,41 @@
         </DynamicKey>
         <DynamicKey>
             <Label>,</Label>
-            <Text>,</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>,</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>4</Label>
-            <Text>4</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>4</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>5</Label>
-            <Text>5</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>5</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>6</Label>
-            <Text>6</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>6</Text>
         </DynamicKey>
         <DynamicKey Width="2">
             <Symbol>EnterIcon</Symbol>
             <Text>&#13;</Text>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <Label>ù</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>ù</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
 
         <!-- Third row -->
-        <DynamicKey Row="2" Col="0" Width="2">
+        <DynamicKey Row="2" Col="0">
+            <Label>ç</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>ç</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey Width="2">
             <Symbol>ShiftIcon</Symbol>
@@ -164,38 +185,50 @@
         </DynamicKey>
         <DynamicKey>
             <Label>*</Label>
-            <Text>*</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>*</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>/</Label>
-            <Text>/</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>/</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>1</Label>
-            <Text>1</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>1</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>2</Label>
-            <Text>2</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>2</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>3</Label>
-            <Text>3</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>3</Text>
         </DynamicKey>
-        <DynamicKey Width="2">
-            <Symbol>BrowserBackIcon</Symbol>
+        <DynamicKey>
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Symbol>MinimiseIcon</Symbol>
+            <Action>Minimise</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>\</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>\</Text>
             <Action>BackFromKeyboard</Action>
-        </DynamicKey>
-        <DynamicKey Width="2">
         </DynamicKey>
 
         <!-- Fourth row -->
-        <DynamicKey Row="3" Col="0" Width="2">
+        <DynamicKey Row="3" Col="0">
+            <Label>`</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>`</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
         <DynamicKey Width="2">
             <Action>LeftCtrl</Action>
@@ -217,23 +250,23 @@
         </DynamicKey>
         <DynamicKey Width="2">
             <Label>0</Label>
-            <Text>0</Text>
             <ShiftDownLabel></ShiftDownLabel>
+            <Text>0</Text>
         </DynamicKey>
         <DynamicKey>
             <Label>.</Label>
-            <Text>.</Text>
             <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Action>Sleep</Action>
-            <Symbol>SleepIcon</Symbol>
-        </DynamicKey>
-        <DynamicKey>
-            <Symbol>MinimiseIcon</Symbol>
-            <Action>Minimise</Action>
+            <Text>.</Text>
         </DynamicKey>
         <DynamicKey Width="2">
+            <Symbol>BrowserBackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>%</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>%</Text>
+            <Action>BackFromKeyboard</Action>
         </DynamicKey>
     </Content>
 </Keyboard>

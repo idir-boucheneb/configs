@@ -1,32 +1,23 @@
 
 <!-- Copyright (c) 2022 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved -->
 <Keyboard>
-    <Name>HackerAlpha</Name>
-
-
-    <!-- <ShowOutputPanel>True</ShowOutputPanel> -->
-    <SymbolMargin>10</SymbolMargin>
-    <BorderThickness>1,1,1,1</BorderThickness>
-
+    <Name>HackerAlpha2</Name>
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
     <Position>Bottom</Position>
     <Width>90%</Width>
     <Height>37%</Height>
-
-    <VerticalOffset>-70</VerticalOffset>
+    <BackgroundColor>Transparent</BackgroundColor>
+    <BorderColor>Transparent</BorderColor>
+    <SymbolMargin>20</SymbolMargin>
+    <BorderThickness>1,1,1,1</BorderThickness>
     <Grid>
         <Rows>4</Rows>
-        <Cols>20</Cols>
+        <Cols>18</Cols>
     </Grid>
     <Content>
         <!-- First row -->
         <DynamicKey Row="0" Col="0">
-            <Label>é</Label>
-            <Text>é</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
             <Label>(</Label>
             <Text>(</Text>
             <ShiftDownLabel></ShiftDownLabel>
@@ -104,19 +95,10 @@
             <Text>)</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey>
-            <Label>è</Label>
-            <Text>è</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
+
 
         <!-- Second row -->
         <DynamicKey Row="1" Col="0">
-            <Label>à</Label>
-            <Text>à</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
             <Label>{</Label>
             <Text>{</Text>
             <ShiftDownLabel></ShiftDownLabel>
@@ -194,19 +176,10 @@
             <Text>}</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey>
-            <Label>^</Label>
-            <Text>^</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
+
 
         <!-- Third row -->
         <DynamicKey Row="2" Col="0">
-            <Label>ç</Label>
-            <Text>ç</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
             <Label>[</Label>
             <Text>[</Text>
             <ShiftDownLabel></ShiftDownLabel>
@@ -271,79 +244,9 @@
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>/</Label>
-            <Text>/</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>*</Label>
-            <Text>*</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Symbol>NumericAndSymbolsIcon</Symbol>
-            <ChangeKeyboard BackReturnsHere="True">HackerNum</ChangeKeyboard>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>]</Label>
-            <Text>]</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>\</Label>
-            <Text>\</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-
-        <!-- Fourth row -->
-        <DynamicKey Row="3" Col="0">
             <Label>"</Label>
+            <ShiftDownLabel></ShiftDownLabel>
             <Text>"</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>&#x3C;</Label>
-            <Text>&#x3C;</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey Width="2">
-            <Action>LeftCtrl</Action>
-            <Label>Ctrl</Label>
-        </DynamicKey>
-        <DynamicKey Width="2">
-            <Label>-</Label>
-            <Text>-</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>        
-	<DynamicKey>
-            <Label>!</Label>
-            <Text>!</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>&#x26;</Label>
-            <Text>&#x26;</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-
-        <DynamicKey Width="4">
-            <Symbol>SpaceIcon</Symbol>
-            <Text>&#32;</Text>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>|</Label>
-            <Text>|</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>?</Label>
-            <Text>?</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey Width="2">
-            <Label>+</Label>
-            <Text>+</Text>
-            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Action>Sleep</Action>
@@ -354,13 +257,73 @@
             <Action>Minimise</Action>
         </DynamicKey>
         <DynamicKey>
-            <Label>&#x3E;</Label>
-            <Text>&#x3E;</Text>
+            <Label>]</Label>
+            <Text>]</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+
+
+        <!-- Fourth row -->
+        <DynamicKey Row="3" Col="0">
+            <Label>&#x3C;</Label>
+            <Text>&#x3C;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="2">
+            <Action>LeftCtrl</Action>
+            <Label>Ctrl</Label>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>-</Label>
+            <Text>-</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>`</Label>
-            <Text>`</Text>
+            <Label>/</Label>
+            <Text>/</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>             
+	<DynamicKey>
+            <Label>!</Label>
+            <Text>!</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>|</Label>
+            <Text>|</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="4">
+            <Symbol>SpaceIcon</Symbol>
+            <Text>&#32;</Text>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>&#x26;</Label>
+            <Text>&#x26;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>?</Label>
+            <Text>?</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>*</Label>
+            <Text>*</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>+</Label>
+            <Text>+</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="2">
+            <Symbol>NumericAndSymbolsIcon</Symbol>
+            <ChangeKeyboard BackReturnsHere="True">HackerNum2</ChangeKeyboard>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>&#x3E;</Label>
+            <Text>&#x3E;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
     </Content>

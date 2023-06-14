@@ -1,20 +1,17 @@
-
 <!-- Copyright (c) 2022 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved -->
 <Keyboard>
-    <Name>HackerAlpha</Name>
+    <Name>HackerAlphaOpy</Name>
 
 
     <!-- <ShowOutputPanel>True</ShowOutputPanel> -->
-    <SymbolMargin>10</SymbolMargin>
+    <SymbolMargin>15</SymbolMargin>
     <BorderThickness>1,1,1,1</BorderThickness>
 
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
     <Position>Bottom</Position>
     <Width>90%</Width>
-    <Height>37%</Height>
-
-    <VerticalOffset>-70</VerticalOffset>
+    <Height>40%</Height>
     <Grid>
         <Rows>4</Rows>
         <Cols>20</Cols>
@@ -36,34 +33,24 @@
             <Label>Esc</Label>
         </DynamicKey>
         <DynamicKey>
-            <Label>a</Label>
-            <Text>a</Text>
-            <ShiftDownLabel>A</ShiftDownLabel>
+            <Label>-&#x3E;</Label>
+            <Text>-&#x3E;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>z</Label>
-            <Text>z</Text>
-            <ShiftDownLabel>Z</ShiftDownLabel>
+            <Label>.</Label>
+            <Text>.</Text>
+            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>e</Label>
-            <Text>e</Text>
-            <ShiftDownLabel>E</ShiftDownLabel>
+            <Label>q</Label>
+            <Text>q</Text>
+            <ShiftDownLabel>Q</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>r</Label>
-            <Text>r</Text>
-            <ShiftDownLabel>R</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>t</Label>
-            <Text>t</Text>
-            <ShiftDownLabel>T</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>y</Label>
-            <Text>y</Text>
-            <ShiftDownLabel>Y</ShiftDownLabel>
+            <Label>k</Label>
+            <Text>k</Text>
+            <ShiftDownLabel>K</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Label>u</Label>
@@ -71,23 +58,33 @@
             <ShiftDownLabel>U</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <Label>s</Label>
+            <Text>s</Text>
+            <ShiftDownLabel>S</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>a</Label>
+            <Text>a</Text>
+            <ShiftDownLabel>A</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
             <Label>i</Label>
             <Text>i</Text>
             <ShiftDownLabel>I</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>o</Label>
-            <Text>o</Text>
-            <ShiftDownLabel>O</ShiftDownLabel>
+            <Label>v</Label>
+            <Text>v</Text>
+            <ShiftDownLabel>V</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>p</Label>
-            <Text>p</Text>
-            <ShiftDownLabel>P</ShiftDownLabel>
+            <Label>y</Label>
+            <Text>y</Text>
+            <ShiftDownLabel>Y</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>'</Label>
-            <Text>'</Text>
+            <Label>,</Label>
+            <Text>,</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
@@ -126,29 +123,14 @@
             <Text>&#9;</Text>
         </DynamicKey>
         <DynamicKey>
-            <Label>q</Label>
-            <Text>q</Text>
-            <ShiftDownLabel>Q</ShiftDownLabel>
+            <Label>_</Label>
+            <Text>_</Text>
+            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>s</Label>
-            <Text>s</Text>
-            <ShiftDownLabel>S</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>d</Label>
-            <Text>d</Text>
-            <ShiftDownLabel>D</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>f</Label>
-            <Text>f</Text>
-            <ShiftDownLabel>F</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>g</Label>
-            <Text>g</Text>
-            <ShiftDownLabel>G</ShiftDownLabel>
+            <Label>;</Label>
+            <Text>;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Label>h</Label>
@@ -161,23 +143,38 @@
             <ShiftDownLabel>J</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>k</Label>
-            <Text>k</Text>
-            <ShiftDownLabel>K</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
             <Label>l</Label>
             <Text>l</Text>
             <ShiftDownLabel>L</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>m</Label>
-            <Text>m</Text>
-            <ShiftDownLabel>M</ShiftDownLabel>
+            <Label>e</Label>
+            <Text>e</Text>
+            <ShiftDownLabel>E</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>_</Label>
-            <Text>_</Text>
+            <Label>n</Label>
+            <Text>n</Text>
+            <ShiftDownLabel>N</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>t</Label>
+            <Text>t</Text>
+            <ShiftDownLabel>T</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>p</Label>
+            <Text>p</Text>
+            <ShiftDownLabel>P</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>f</Label>
+            <Text>f</Text>
+            <ShiftDownLabel>F</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>'</Label>
+            <Text>'</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
@@ -221,6 +218,11 @@
             <ShiftDownLabel>W</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <Label>:</Label>
+            <Text>:</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
             <Label>x</Label>
             <Text>x</Text>
             <ShiftDownLabel>X</ShiftDownLabel>
@@ -231,9 +233,29 @@
             <ShiftDownLabel>C</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>v</Label>
-            <Text>v</Text>
-            <ShiftDownLabel>V</ShiftDownLabel>
+            <Label>r</Label>
+            <Text>r</Text>
+            <ShiftDownLabel>R</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>d</Label>
+            <Text>d</Text>
+            <ShiftDownLabel>D</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>o</Label>
+            <Text>o</Text>
+            <ShiftDownLabel>O</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>m</Label>
+            <Text>m</Text>
+            <ShiftDownLabel>M</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>g</Label>
+            <Text>g</Text>
+            <ShiftDownLabel>G</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Label>b</Label>
@@ -241,39 +263,14 @@
             <ShiftDownLabel>B</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>n</Label>
-            <Text>n</Text>
-            <ShiftDownLabel>N</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>.</Label>
-            <Text>.</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>,</Label>
-            <Text>,</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>;</Label>
-            <Text>;</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>-&#x3E;</Label>
-            <Text>-&#x3E;</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
-            <Label>:</Label>
-            <Text>:</Text>
-            <ShiftDownLabel></ShiftDownLabel>
+            <Label>z</Label>
+            <Text>z</Text>
+            <ShiftDownLabel>Z</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Label>/</Label>
             <Text>/</Text>
-            <ShiftDownLabel></ShiftDownLabel>
+            <ShiftDownLabel>'</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
             <Label>*</Label>
@@ -311,13 +308,13 @@
             <Label>Ctrl</Label>
         </DynamicKey>
         <DynamicKey Width="2">
-            <Label>-</Label>
-            <Text>-</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>        
-	<DynamicKey>
             <Label>!</Label>
             <Text>!</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>-</Label>
+            <Text>-</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
@@ -325,7 +322,6 @@
             <Text>&#x26;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-
         <DynamicKey Width="4">
             <Symbol>SpaceIcon</Symbol>
             <Text>&#32;</Text>
@@ -336,13 +332,13 @@
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>?</Label>
-            <Text>?</Text>
+            <Label>+</Label>
+            <Text>+</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="2">
-            <Label>+</Label>
-            <Text>+</Text>
+            <Label>?</Label>
+            <Text>?</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
