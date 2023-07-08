@@ -1,16 +1,19 @@
-
-<!-- Copyright (c) 2022 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved -->
 <Keyboard>
     <Name>HackerAlpha2</Name>
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
     <Position>Bottom</Position>
     <Width>90%</Width>
-    <Height>37%</Height>
+    <Height>35%</Height>
     <BackgroundColor>Transparent</BackgroundColor>
     <BorderColor>Transparent</BorderColor>
     <SymbolMargin>20</SymbolMargin>
     <BorderThickness>1,1,1,1</BorderThickness>
+
+    <KeyGroup Name="Default" LockOnTime="20" CompletionTimes="220,400" KeyDisabledOpacity=".5" />
+    <KeyGroup Name="Slow" LockOnTime="100" CompletionTimes="350" KeyDisabledOpacity=".5" />
+    <KeyGroup Name="SpeedUp" LockOnTime="20" CompletionTimes="220" KeyDisabledOpacity=".5" />
+
     <Grid>
         <Rows>4</Rows>
         <Cols>18</Cols>
@@ -18,313 +21,413 @@
     <Content>
         <!-- First row -->
         <DynamicKey Row="0" Col="0">
+            <KeyGroup>Default</KeyGroup>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Label>(</Label>
             <Text>(</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Label>'</Label>
+            <Text>'</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Action>Escape</Action>
             <Label>Esc</Label>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>a</Label>
             <Text>a</Text>
             <ShiftDownLabel>A</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>z</Label>
             <Text>z</Text>
             <ShiftDownLabel>Z</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>e</Label>
             <Text>e</Text>
             <ShiftDownLabel>E</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>r</Label>
             <Text>r</Text>
             <ShiftDownLabel>R</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>t</Label>
             <Text>t</Text>
             <ShiftDownLabel>T</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>y</Label>
             <Text>y</Text>
             <ShiftDownLabel>Y</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>u</Label>
             <Text>u</Text>
             <ShiftDownLabel>U</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>i</Label>
             <Text>i</Text>
             <ShiftDownLabel>I</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>o</Label>
             <Text>o</Text>
             <ShiftDownLabel>O</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>p</Label>
             <Text>p</Text>
             <ShiftDownLabel>P</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>'</Label>
-            <Text>'</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>=</Label>
             <Text>=</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey Width="1">
+            <KeyGroup>SpeedUp</KeyGroup>
             <Action>BackOne</Action>
             <Symbol>BackOneIcon</Symbol>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>)</Label>
             <Text>)</Text>
             <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>UpArrowKeyIcon</Symbol>
+            <Action>ArrowUp</Action>
         </DynamicKey>
 
 
         <!-- Second row -->
         <DynamicKey Row="1" Col="0">
+            <KeyGroup>Default</KeyGroup>
+            <Label>Alt</Label>
+            <Action>LeftAlt</Action>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Label>{</Label>
             <Text>{</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Label>_</Label>
+            <Text>_</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Symbol>TabIcon</Symbol>
             <Text>&#9;</Text>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>q</Label>
             <Text>q</Text>
             <ShiftDownLabel>Q</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>s</Label>
             <Text>s</Text>
             <ShiftDownLabel>S</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>d</Label>
             <Text>d</Text>
             <ShiftDownLabel>D</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>f</Label>
             <Text>f</Text>
             <ShiftDownLabel>F</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>g</Label>
             <Text>g</Text>
             <ShiftDownLabel>G</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>h</Label>
             <Text>h</Text>
             <ShiftDownLabel>H</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>j</Label>
             <Text>j</Text>
             <ShiftDownLabel>J</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>k</Label>
             <Text>k</Text>
             <ShiftDownLabel>K</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>l</Label>
             <Text>l</Text>
             <ShiftDownLabel>L</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>m</Label>
             <Text>m</Text>
             <ShiftDownLabel>M</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
-            <Label>_</Label>
-            <Text>_</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>$</Label>
             <Text>$</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Symbol>EnterIcon</Symbol>
             <Text>&#13;</Text>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>}</Label>
             <Text>}</Text>
             <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>DownArrowKeyIcon</Symbol>
+            <Action>ArrowDown</Action>
         </DynamicKey>
 
 
         <!-- Third row -->
         <DynamicKey Row="2" Col="0">
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>WinIcon</Symbol>
+            <Action>LeftWin</Action>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Label>[</Label>
             <Text>[</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Label>"</Label>
+            <ShiftDownLabel></ShiftDownLabel>
+            <Text>"</Text>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Symbol>ShiftIcon</Symbol>
             <Action>LeftShift</Action>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>w</Label>
             <Text>w</Text>
             <ShiftDownLabel>W</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>x</Label>
             <Text>x</Text>
             <ShiftDownLabel>X</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>c</Label>
             <Text>c</Text>
             <ShiftDownLabel>C</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>v</Label>
             <Text>v</Text>
             <ShiftDownLabel>V</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>b</Label>
             <Text>b</Text>
             <ShiftDownLabel>B</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>n</Label>
             <Text>n</Text>
             <ShiftDownLabel>N</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>.</Label>
             <Text>.</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>,</Label>
             <Text>,</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>;</Label>
             <Text>;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>-&#x3E;</Label>
             <Text>-&#x3E;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>:</Label>
             <Text>:</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey>
-            <Label>"</Label>
-            <ShiftDownLabel></ShiftDownLabel>
-            <Text>"</Text>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>NumericAndSymbolsIcon</Symbol>
+            <ChangeKeyboard BackReturnsHere="True">HackerNum2</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey>
-            <Action>Sleep</Action>
-            <Symbol>SleepIcon</Symbol>
-        </DynamicKey>
-        <DynamicKey>
-            <Symbol>MinimiseIcon</Symbol>
-            <Action>Minimise</Action>
-        </DynamicKey>
-        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>]</Label>
             <Text>]</Text>
             <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>LeftArrowKeyIcon</Symbol>
+            <Action>ArrowLeft</Action>
         </DynamicKey>
 
 
         <!-- Fourth row -->
         <DynamicKey Row="3" Col="0">
+            <KeyGroup>Default</KeyGroup>
+            <Action>Delete</Action>
+            <Label>Del</Label>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Label>&#x3C;</Label>
             <Text>&#x3C;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
+        <DynamicKey>
+            <KeyGroup>Slow</KeyGroup>
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey Width="1">
+            <KeyGroup>Default</KeyGroup>
             <Action>LeftCtrl</Action>
             <Label>Ctrl</Label>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>-</Label>
             <Text>-</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>/</Label>
             <Text>/</Text>
             <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>             
-	<DynamicKey>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>!</Label>
             <Text>!</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>|</Label>
             <Text>|</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="4">
+        <DynamicKey Width="3">
+            <KeyGroup>Default</KeyGroup>
             <Symbol>SpaceIcon</Symbol>
             <Text>&#32;</Text>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>&#x26;</Label>
             <Text>&#x26;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>?</Label>
             <Text>?</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>*</Label>
             <Text>*</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>+</Label>
             <Text>+</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="2">
-            <Symbol>NumericAndSymbolsIcon</Symbol>
-            <ChangeKeyboard BackReturnsHere="True">HackerNum2</ChangeKeyboard>
+        <DynamicKey>
+            <KeyGroup>Slow</KeyGroup>
+            <Symbol>MinimiseIcon</Symbol>
+            <Action>Minimise</Action>
         </DynamicKey>
         <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
             <Label>&#x3E;</Label>
             <Text>&#x3E;</Text>
             <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>Default</KeyGroup>
+            <Symbol>RightArrowKeyIcon</Symbol>
+            <Action>ArrowRight</Action>
         </DynamicKey>
     </Content>
 </Keyboard>
