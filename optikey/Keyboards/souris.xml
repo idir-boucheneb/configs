@@ -1,0 +1,79 @@
+<!-- Copyright (c) 2022 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved -->
+<Keyboard>
+    <Name>Souris</Name>
+
+    <SymbolMargin>4</SymbolMargin>
+    <BorderThickness>1,1,1,1</BorderThickness>
+
+
+    <WindowState>Docked</WindowState>
+    <DockSize>Collapsed</DockSize>
+    <Position>Right</Position>
+    <Width>120</Width>
+    <Height>100%</Height>
+
+    <Position>BottomRight</Position>
+    <Grid>
+        <Rows>11</Rows>
+        <Cols>1</Cols>
+    </Grid>
+    <Content>
+        <!-- First row -->
+        <DynamicKey Row="0" Col="0">
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMagneticCursor</Action>
+            <Symbol>MouseMagneticCursorIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMoveAndLeftClick</Action>
+            <Symbol>MouseLeftClickIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMoveAndLeftDoubleClick</Action>
+            <Symbol>MouseLeftDoubleClickIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>LookToScrollActive</Action>
+            <Symbol>LookToScrollActiveIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMoveAndMiddleClick</Action>
+            <Symbol>MouseMiddleClickIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseDrag</Action>
+            <Symbol>MouseDragIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMoveAndRightClick</Action>
+            <Symbol>MouseRightClickIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Action>MouseMagnifier</Action>
+            <Symbol>MouseMagnifierIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <KeyGroup>functions1</KeyGroup>
+            <Label>Switcher</Label>
+            <Plugin>
+                <Name>ExternalProgram</Name>
+                <Method>RUN</Method>
+                <Argument>
+                    <Name>command</Name>
+                    <Value>"C:\Program Files\Tobii Dynavox\Switcher\Tdx.Switcher.exe"</Value>
+                </Argument>
+                <Argument>
+                    <Name>parameters</Name>
+                    <Value>-s</Value>
+                </Argument>
+            </Plugin>
+        </DynamicKey>
+        <DynamicKey>
+            <Symbol>BackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+    </Content>
+</Keyboard>

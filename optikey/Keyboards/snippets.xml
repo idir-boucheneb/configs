@@ -1,0 +1,199 @@
+<Keyboard>
+    <Name>Snippets</Name>
+    <HideFromKeyboardMenu>true</HideFromKeyboardMenu>
+    <BackgroundColor>#000000</BackgroundColor>
+
+    <BorderColor>#000000</BorderColor>
+    <SymbolMargin>10</SymbolMargin>
+    <BorderThickness>0,0,0,20</BorderThickness>
+
+    <Grid>
+        <Rows>4</Rows>
+        <Cols>16</Cols>
+    </Grid>
+
+    <KeyGroup Name="abc" BackgroundColor="#907070" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="123" BackgroundColor="#7070aa" AutoScaleToOneKeyWidth="false"/>
+
+    <KeyGroup Name="symbols" BackgroundColor="#709070" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="modifiers" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="functions1" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="functions2" BackgroundColor="#D6AA1A" AutoScaleToOneKeyWidth="false"/>
+
+    <KeyGroup Name="functions1-locked" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false" BorderColor="#aa5500" BorderThickness="5"/>
+    <KeyGroup Name="functions2-locked" BackgroundColor="#D6AA1A" AutoScaleToOneKeyWidth="false" BorderColor="#aa5500" BorderThickness="5"/>
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false"/>
+
+    <Content>
+
+
+        <!-- first row -->
+        <DynamicKey>
+        </DynamicKey>
+
+
+        <DynamicKey Col="14" Row="0" Height="2">
+        </DynamicKey>
+
+        <DynamicKey></DynamicKey>
+
+        <DynamicKey>
+            <Label>class</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_class</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>variable</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_var</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+
+        <DynamicKey>
+            <Label>if</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_if</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>try</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_try</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>get/set</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>NumPad3</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>getValidInt</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>getValidInt</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <KeyGroup>functions1</KeyGroup>
+            <Label>Mod</Label>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_new_mod</Text>
+        </DynamicKey>
+        <DynamicKey></DynamicKey>
+        <DynamicKey>
+            <Action>Sleep</Action>
+            <KeyGroup>Slow</KeyGroup>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+
+        <DynamicKey></DynamicKey>
+        <DynamicKey></DynamicKey>
+        <DynamicKey></DynamicKey>
+
+        <!-- top right corner -->
+        <DynamicKey Row="0" Col="15">
+            <Symbol>BackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <!-- second row -->
+        <DynamicKey></DynamicKey>
+
+        <DynamicKey></DynamicKey>
+        <DynamicKey>
+            <Label>method</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_method</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+
+        <DynamicKey>
+            <Label>field</Label>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_field</Text>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>for</Label>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_for</Text>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>switch</Label>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_switch</Text>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>print</Label>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_print</Text>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>getString</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>NumPad3</Action>
+            <Text>getString</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>instanceof</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>NumPad1</Action>
+            <Wait>75</Wait>
+            <Text>snippet_instance</Text>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey></DynamicKey>
+        <DynamicKey>
+        </DynamicKey>
+        <DynamicKey></DynamicKey>
+        <DynamicKey>
+        </DynamicKey>
+        <DynamicKey></DynamicKey>
+
+
+        <DynamicKey>
+        </DynamicKey>
+
+        <!-- main keyboard, first row -->
+        <!-- main keyboard, first row -->
+        <DynamicKey>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>Escape</Action>
+            <Label>Esc</Label>
+        </DynamicKey>
+    </Content>
+</Keyboard>

@@ -1,0 +1,144 @@
+<Keyboard>
+    <Name>VS Code</Name>
+    <BorderThickness>0,0,0,20</BorderThickness>
+    <HideFromKeyboardMenu>true</HideFromKeyboardMenu>
+    <BackgroundColor>#000000</BackgroundColor>
+    <BorderColor>#000000</BorderColor>
+    <SymbolMargin>10</SymbolMargin>
+    <BorderThickness>0,0,0,20</BorderThickness>
+
+    <Grid>
+        <Rows>6</Rows>
+        <Cols>16</Cols>
+    </Grid>
+
+    <KeyGroup Name="Grey" BackgroundColor="#353737" />
+
+    <KeyGroup Name="abc" BackgroundColor="#907070" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="123" BackgroundColor="#7070aa" AutoScaleToOneKeyWidth="false"/>
+
+    <KeyGroup Name="symbols" BackgroundColor="#709070" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="modifiers" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="functions1" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="functions2" BackgroundColor="#D6AA1A" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false"/>
+
+
+    <Content>
+
+
+        <!-- first row -->
+        <DynamicKey>
+            <Label>⚙</Label>
+            <ChangeKeyboard BackReturnsHere="False">vscode_shortcuts_locked</ChangeKeyboard>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Start</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>F5</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Stop</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <KeyDown>LeftShift</KeyDown>
+            <Action>F5</Action>
+            <KeyUp>LeftShift</KeyUp>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+
+        <DynamicKey>
+            <Label>Step\nover</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>F10</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>//</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <KeyDown>LeftCtrl</KeyDown>
+            <KeyDown>/</KeyDown>
+            <Wait>200</Wait>
+            <KeyUp>/</KeyUp>
+            <KeyUp>LeftCtrl</KeyUp>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>Javadoc</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <!-- assumes you are on the line of a method declaration to start with -->
+            <Action>Home</Action>
+            <KeyDown>Return</KeyDown>
+            <KeyUp>Return</KeyUp>
+            <Action>ArrowUp</Action>
+            <Text>/**</Text>
+            <Wait>700</Wait>            <!-- wait for auto-jdoc suggestion to pop up -->
+            <KeyDown>Return</KeyDown>
+            <KeyUp>Return</KeyUp>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+
+
+        <!-- top right corner -->
+        <DynamicKey Row="0" Col="15">
+            <Symbol>BackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <!-- second row -->
+        <DynamicKey>
+            <KeyGroup>Slow</KeyGroup>
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Run</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <KeyDown>LeftCtrl</KeyDown>
+            <Action>F5</Action>
+            <KeyUp>LeftCtrl</KeyUp>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Debug</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>F5</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+        <DynamicKey>
+            <Label>Break\npoint</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>F9</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Step\ninto</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>F11</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Step\nout</Label>
+            <KeyGroup>functions1</KeyGroup>
+            <KeyDown>LeftShift</KeyDown>
+            <Action>F11</Action>
+            <KeyUp>LeftShift</KeyUp>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Label>Indent</Label>
+            <KeyGroup>functions2</KeyGroup>
+            <Action>F15</Action>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+        <DynamicKey>
+            <Symbol>MinimiseIcon</Symbol>
+            <ChangeKeyboard>HideUnder</ChangeKeyboard>
+        </DynamicKey>
+
+    </Content>
+</Keyboard>

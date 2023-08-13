@@ -1,0 +1,349 @@
+<Keyboard>
+    <Name>Vim</Name>
+    <HideFromKeyboardMenu>true</HideFromKeyboardMenu>
+    <BackgroundColor>#000000</BackgroundColor>
+    <BorderColor>#000000</BorderColor>
+    <SymbolMargin>10</SymbolMargin>
+    <BorderThickness>0,0,0,20</BorderThickness>
+
+    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200" BackgroundColor="#D69002"/>
+    <KeyGroup Name="abc" BackgroundColor="#eeeeee" KeyDisabledBackground="gray" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="123" BackgroundColor="#7070aa" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="symbols" BackgroundColor="#707070" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="modifiers" BackgroundColor="#ff0000" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="functions1" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false"/>
+
+
+    <Grid>
+        <Rows>4</Rows>
+        <Cols>136</Cols>
+    </Grid>
+    <Content>
+        <!-- First row -->
+        <DynamicKey Row="0" Col="0" Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Action>Escape</Action>
+            <Label>Esc</Label>
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Symbol>EndIcon</Symbol>
+            <KeyDown>LeftCtrl</KeyDown>
+            <KeyDown>f</KeyDown>
+            <KeyUp>f</KeyUp>
+            <KeyUp>LeftCtrl</KeyUp>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Label>˅</Label>
+            <KeyDown>LeftCtrl</KeyDown>
+            <KeyDown>d</KeyDown>
+            <KeyUp>d</KeyUp>
+            <KeyUp>LeftCtrl</KeyUp>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Label>↓</Label>
+            <Text>5</Text>
+            <Text>j</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>UpArrowKeyIcon</Symbol>
+            <Text>k</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Label>↑</Label>
+            <Text>5</Text>
+            <Text>k</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Label>˄</Label>
+            <KeyDown>LeftCtrl</KeyDown>
+            <KeyDown>u</KeyDown>
+            <KeyUp>u</KeyUp>
+            <KeyUp>LeftCtrl</KeyUp>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Symbol>HomeIcon</Symbol>
+            <KeyDown>LeftCtrl</KeyDown>
+            <KeyDown>b</KeyDown>
+            <KeyUp>b</KeyUp>
+            <KeyUp>LeftCtrl</KeyUp>
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+            <ShiftDownLabel></ShiftDownLabel>
+            <Symbol>BackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+
+
+        <!-- Second row -->
+        <DynamicKey Row="1" Col="0" Width="8">
+            <KeyGroup>symbols</KeyGroup>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Symbol>TabIcon</Symbol>
+            <Text>&#9;</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Symbol>ArrowPointingToLeftIcon</Symbol>
+            <Text>_</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>LeftArrowKeyIcon</Symbol>
+            <Text>l</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>DownArrowKeyIcon</Symbol>
+            <Text>j</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>RightArrowKeyIcon</Symbol>
+            <Text>m</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>arrows2</KeyGroup>
+            <Symbol>ArrowPointingToRightIcon</Symbol>
+            <Text>$</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>m</Label>
+            <Text>m</Text>
+            <ShiftDownLabel>M</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>_</Label>
+            <Text>_</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>$</Label>
+            <Text>$</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Symbol>EnterIcon</Symbol>
+            <Text>&#13;</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+
+
+        <!-- Third row -->
+        <DynamicKey Row="2" Col="0" Width="8">
+            <KeyGroup>symbols</KeyGroup>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Symbol>ShiftIcon</Symbol>
+            <Action>LeftShift</Action>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>#</Label>
+            <Text>#</Text>
+            <Action>BackFromKeyboard</Action>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>\</Label>
+            <Text>\</Text>
+            <Action>BackFromKeyboard</Action>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>~</Label>
+            <Text>~</Text>
+            <Text>~</Text>
+            <Action>BackOne</Action>
+            <Action>BackFromKeyboard</Action>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>v</Label>
+            <Text>v</Text>
+            <ShiftDownLabel>V</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>b</Label>
+            <Text>b</Text>
+            <ShiftDownLabel>B</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>abc</KeyGroup>
+            <Label>n</Label>
+            <Text>n</Text>
+            <ShiftDownLabel>N</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>.</Label>
+            <Text>.</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>,</Label>
+            <Text>,</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>;</Label>
+            <Text>;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>-&#x3E;</Label>
+            <Text>-&#x3E;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>:</Label>
+            <Text>:</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>"</Label>
+            <Text>"</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Symbol>ShiftIcon</Symbol>
+            <Action>LeftShift</Action>
+        </DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
+
+
+        <!-- Fourth row -->
+        <DynamicKey Row="3" Col="0" Width="8">
+            <KeyGroup>modifiers</KeyGroup>
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Action>LeftCtrl</Action>
+            <Label>Ctrl</Label>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>-</Label>
+            <Text>-</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>/</Label>
+            <Text>/</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>!</Label>
+            <Text>!</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="24">
+            <KeyGroup>functions1</KeyGroup>
+            <Symbol>SpaceIcon</Symbol>
+            <Text>&#32;</Text>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>?</Label>
+            <Text>?</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>*</Label>
+            <Text>*</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>+</Label>
+            <Text>+</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>|</Label>
+            <Text>|</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>&#x26;</Label>
+            <Text>&#x26;</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <KeyGroup>functions1</KeyGroup>
+            <Label>Switcher</Label>
+            <Plugin>
+                <Name>ExternalProgram</Name>
+                <Method>RUN</Method>
+                <Argument>
+                    <Name>command</Name>
+                    <Value>"C:\Program Files\Tobii Dynavox\Switcher\Tdx.Switcher.exe"</Value>
+                </Argument>
+                <Argument>
+                    <Name>parameters</Name>
+                    <Value>-s</Value>
+                </Argument>
+            </Plugin>
+        </DynamicKey>
+        <DynamicKey Width="8">
+            <ShiftDownLabel></ShiftDownLabel>
+            <Symbol>BackIcon</Symbol>
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+    </Content>
+</Keyboard>
+
