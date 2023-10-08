@@ -1,5 +1,5 @@
 <Keyboard>
-    <Name>Write</Name>
+    <Name>Main</Name>
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
     <Position>Bottom</Position>
@@ -27,9 +27,9 @@
     <Content>
         <!-- First row -->
         <DynamicKey Row="0" Col="0" Width="10">
-            <KeyGroup>functions1</KeyGroup>
-            <Action>Delete</Action>
-            <Label>Del</Label>
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>UpArrowKeyIcon</Symbol>
+            <Action>ArrowUp</Action>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>modifiers</KeyGroup>
@@ -130,9 +130,8 @@
             <ChangeKeyboard BackReturnsHere="True">Num</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey Width="10">
-            <ShiftDownLabel></ShiftDownLabel>
-            <Symbol>BackIcon</Symbol>
-            <Action>BackFromKeyboard</Action>
+            <Symbol>MinimiseIcon</Symbol>
+            <ChangeKeyboard BackReturnsHere="True">Minimise</ChangeKeyboard>
         </DynamicKey>
 
 
@@ -154,8 +153,8 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>é</Label>
-            <Text>é</Text>
+            <Label>_</Label>
+            <Text>_</Text>
             <ShiftDownLabel>8</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
@@ -226,8 +225,8 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>è</Label>
-            <Text>è</Text>
+            <Label>$</Label>
+            <Text>$</Text>
             <ShiftDownLabel>£</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="12">
@@ -236,11 +235,14 @@
             <Text>&#13;</Text>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>modifiers</KeyGroup>
+            <Label>🗺️</Label>
+            <ChangeKeyboard BackReturnsHere="True">Write</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey Width="10">
-            <KeyGroup>arrows</KeyGroup>
-            <Symbol>UpArrowKeyIcon</Symbol>
-            <Action>ArrowUp</Action>
+            <KeyGroup>functions1</KeyGroup>
+            <Action>Delete</Action>
+            <Label>Del</Label>
         </DynamicKey>
 
 
@@ -268,9 +270,9 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>à</Label>
-            <Text>à</Text>
-            <ShiftDownLabel></ShiftDownLabel>
+            <Label>\</Label>
+            <Text>\</Text>
+            <ShiftDownLabel>\</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
@@ -328,8 +330,8 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>ç</Label>
-            <Text>ç</Text>
+            <Label>-&#x3E;</Label>
+            <Text>-&#x3E;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
@@ -368,54 +370,60 @@
             <Action>LeftCtrl</Action>
             <Label>Ctrl</Label>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>/</Label>
+            <Text>/</Text>
+            <ShiftDownLabel></ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>(</Label>
             <Text>(</Text>
             <ShiftDownLabel>5</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>{</Label>
             <Text>{</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>[</Label>
             <Text>[</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>!</Label>
             <Text>!</Text>
             <ShiftDownLabel>§</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="24">
+        <DynamicKey Width="32">
             <KeyGroup>functions1</KeyGroup>
             <Symbol>SpaceIcon</Symbol>
             <Text>&#32;</Text>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>*</Label>
             <Text>*</Text>
             <ShiftDownLabel>µ</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>]</Label>
             <Text>]</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>}</Label>
             <Text>}</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
             <Label>)</Label>
             <Text>)</Text>
@@ -458,82 +466,70 @@
             <Action>MouseMoveAndLeftDoubleClick</Action>
             <Symbol>MouseLeftDoubleClickIcon</Symbol>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>symbols</KeyGroup>
             <Label>%</Label>
             <Text>%</Text>
             <ShiftDownLabel>%</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
-            <KeyGroup>symbols</KeyGroup>
-            <Label>&#x3c;</Label>
-            <Text>&#x3c;</Text>
-            <ShiftDownLabel>&#x3e;</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>123</KeyGroup>
             <Label>9</Label>
             <Text>9</Text>
             <ShiftDownLabel>9</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>123</KeyGroup>
             <Label>7</Label>
             <Text>7</Text>
             <ShiftDownLabel>7</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="11">
+            <KeyGroup>symbols</KeyGroup>
+            <Label>&#x3c;</Label>
+            <Text>&#x3c;</Text>
+            <ShiftDownLabel>&#x3e;</ShiftDownLabel>
+        </DynamicKey>
+        <DynamicKey Width="11">
             <KeyGroup>symbols</KeyGroup>
             <Label>|</Label>
             <Text>|</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="11">
             <KeyGroup>symbols</KeyGroup>
             <Label>#</Label>
             <Text>#</Text>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="11">
             <KeyGroup>symbols</KeyGroup>
             <Label>@</Label>
             <Text>@</Text>
             <ShiftDownLabel>@</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>symbols</KeyGroup>
             <Label>`</Label>
             <Text>`</Text>
             <ShiftDownLabel>`</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>123</KeyGroup>
             <Label>2</Label>
             <Text>2</Text>
             <ShiftDownLabel>2</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>symbols</KeyGroup>
             <Label>&#x26;</Label>
             <Text>&#x26;</Text>
             <ShiftDownLabel>1</ShiftDownLabel>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>123</KeyGroup>
             <Label>0</Label>
             <Text>0</Text>
             <ShiftDownLabel>0</ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey Width="10">
-            <KeyGroup>symbols</KeyGroup>
-            <Label>^</Label>
-            <Text>^</Text>
-            <ShiftDownLabel></ShiftDownLabel>
-        </DynamicKey>
-        <DynamicKey Width="10">
-            <KeyGroup>abc</KeyGroup>
-            <Label>ù</Label>
-            <Text>ù</Text>
-            <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>modifiers</KeyGroup>

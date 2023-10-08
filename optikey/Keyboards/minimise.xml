@@ -1,0 +1,28 @@
+<Keyboard>
+    <Name>Minimise</Name>
+    <HideFromKeyboardMenu>True</HideFromKeyboardMenu>
+    <WindowState>Floating</WindowState>
+    <DockSize>Collapsed</DockSize>
+    <Position>BottomRight</Position>
+
+    <HorizontalOffset>-300</HorizontalOffset>
+    <VerticalOffset>10</VerticalOffset>
+    <BackgroundColor>Black</BackgroundColor>
+    <BorderColor>Black</BorderColor>
+    <SymbolMargin>10</SymbolMargin>
+    <BorderThickness>1,1,1,1</BorderThickness>
+    <Width>100</Width>
+    <Height>100</Height>
+
+    <Grid>
+        <Rows>1</Rows>
+        <Cols>1</Cols>
+    </Grid>
+    <Content>
+        <!-- First row -->
+        <DynamicKey Row="0" Col="0" Opacity="0">
+            <Action>BackFromKeyboard</Action>
+        </DynamicKey>
+    </Content>
+</Keyboard>
+
