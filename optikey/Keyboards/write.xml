@@ -11,7 +11,7 @@
     <Height>40%</Height>
 
     <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200" BackgroundColor="#FF0000"/>
-    <KeyGroup Name="abc" BackgroundColor="#FFFFFF" KeyDisabledBackground="gray" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="abc" BackgroundColor="#EEEEEE" KeyDisabledBackground="gray" AutoScaleToOneKeyWidth="false"/>
     <KeyGroup Name="123" BackgroundColor="#7070AA" AutoScaleToOneKeyWidth="false"/>
     <KeyGroup Name="symbols" BackgroundColor="#808080" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="modifiers" BackgroundColor="#0000FF" AutoScaleToOneKeyWidth="false"/>
