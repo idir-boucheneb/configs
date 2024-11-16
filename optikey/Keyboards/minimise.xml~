@@ -5,7 +5,7 @@
     <DockSize>Collapsed</DockSize>
     <Position>BottomRight</Position>
 
-    <HorizontalOffset>-600</HorizontalOffset>
+    <HorizontalOffset>-300</HorizontalOffset>
     <VerticalOffset>10</VerticalOffset>
     <BackgroundColor>Black</BackgroundColor>
     <BorderColor>Black</BorderColor>

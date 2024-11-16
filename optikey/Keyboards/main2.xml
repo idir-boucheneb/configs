@@ -10,13 +10,17 @@
     <Width>100%</Width>
     <Height>37%</Height>
 
-    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200" BackgroundColor="#D69002"/>
-    <KeyGroup Name="abc" BackgroundColor="#eeeeee" KeyDisabledBackground="gray" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="123" BackgroundColor="#7070aa" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
+        BackgroundColor="#D69002" />
+    <KeyGroup Name="enter" CompletionTimes="253,400,200"
+        BackgroundColor="#D69002" />
+    <KeyGroup Name="abc" BackgroundColor="#eeeeee" KeyDisabledBackground="gray"
+        AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="123" BackgroundColor="#7070aa" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="symbols" BackgroundColor="#707070" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="modifiers" BackgroundColor="#ff0000" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="functions1" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="modifiers" BackgroundColor="#ff0000" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="functions1" BackgroundColor="#D69002" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false" />
 
 
     <Grid>
@@ -221,7 +225,7 @@
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="12">
-            <KeyGroup>functions1</KeyGroup>
+            <KeyGroup>enter</KeyGroup>
             <Symbol>EnterIcon</Symbol>
             <Text>&#13;</Text>
         </DynamicKey>

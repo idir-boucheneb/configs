@@ -8,14 +8,14 @@
 
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
-    <Position>Right</Position>
-    <Width>120</Width>
-    <Height>100%</Height>
+    <Position>Bottom</Position>
+    <Width>100%</Width>
+    <Height>8%</Height>
 
     <Position>BottomRight</Position>
     <Grid>
-        <Rows>11</Rows>
-        <Cols>1</Cols>
+        <Rows>1</Rows>
+        <Cols>11</Cols>
     </Grid>
     <Content>
         <!-- First row -->

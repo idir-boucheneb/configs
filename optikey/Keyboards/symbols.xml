@@ -6,38 +6,64 @@
     <Position>Bottom</Position>
     <BackgroundColor>#000000</BackgroundColor>
     <BorderColor>#000000</BorderColor>
-    <SymbolMargin>10</SymbolMargin>
-    <BorderThickness>1,1,1,1</BorderThickness>
+    <SymbolMargin>0</SymbolMargin>
+    <BorderThickness>0,0,0,0</BorderThickness>
+    <Width>100%</Width>
+    <Height>30%</Height>
 
-    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200" BackgroundColor="#FF0000"/>
-    <KeyGroup Name="abc" BackgroundColor="#FFFFFF" KeyDisabledBackground="gray" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="123" BackgroundColor="#7070AA" AutoScaleToOneKeyWidth="false"/>
+    <!--
+    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
+        BackgroundColor="#FF0000" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="abc" BackgroundColor="#FFFFFF" KeyDisabledBackground="gray"
+        AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="123" BackgroundColor="#7070AA" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="symbols" BackgroundColor="#808080" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="modifiers" BackgroundColor="#0000FF" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="functions1" BackgroundColor="#D0D0D0" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="functions2" BackgroundColor="#FFFF00" AutoScaleToOneKeyWidth="false"/>
-    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false"/>
+    <KeyGroup Name="modifiers" BackgroundColor="#0000FF" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="functions1" BackgroundColor="#D0D0D0" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="functions2" BackgroundColor="#FFFF00" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false" /> 
+    -->
+    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
+        BackgroundColor="#503000" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="abc" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="123" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="symbols" BackgroundColor="#002020" AutoScaleToOneKeyWidth="false"
+        KeyDisabledBackground="black" />
+    <KeyGroup Name="functions1" BackgroundColor="#002040" AutoScaleToOneKeyWidth="false"
+        KeyDisabledBackground="black" />
+    <KeyGroup Name="functions2" BackgroundColor="#004020" AutoScaleToOneKeyWidth="false"
+        KeyDisabledBackground="black" />
+    <KeyGroup Name="arrows" BackgroundColor="#002A55" AutoScaleToOneKeyWidth="false" />
+    <KeyGroup Name="modifiers" BackgroundColor="#003030" AutoScaleToOneKeyWidth="false"
+        KeyDisabledBackground="black" />
 
 
     <Grid>
-        <Rows>5</Rows>
-        <Cols>168</Cols>
+        <Rows>6</Rows>
+        <Cols>178</Cols>
     </Grid>
     <Content>
         <!-- First row -->
-        <DynamicKey Row="0" Col="0" Width="10">
-            <KeyGroup>functions1</KeyGroup>
+        <DynamicKey Row="0" Col="0" Width="5">
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <KeyGroup>backone</KeyGroup>
             <Action>Delete</Action>
             <Label>Del</Label>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>MouseMoveAndLeftClick</Action>
+            <Symbol>MouseLeftClickIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions2</KeyGroup>
             <Action>Escape</Action>
             <Label>Esc</Label>
         </DynamicKey>
-        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+
+        </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
             <Label>(</Label>
@@ -52,7 +78,9 @@
             <Text>)</Text>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+
+        </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
             <Label>{</Label>
@@ -67,7 +95,9 @@
             <Text>}</Text>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+
+        </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
             <Label>[</Label>
@@ -82,7 +112,9 @@
             <Text>]</Text>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+
+        </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
             <Label>&#x3c;</Label>
@@ -97,28 +129,39 @@
             <Text>&#x3e;</Text>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8"></DynamicKey>
+        <DynamicKey Width="8">
+        </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>backone</KeyGroup>
             <Action>BackOne</Action>
             <Symbol>BackOneIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>MouseMoveAndRightClick</Action>
+            <Symbol>MouseRightClickIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="10">
             <ShiftDownLabel></ShiftDownLabel>
             <Symbol>BackIcon</Symbol>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
+        <DynamicKey Width="5">
+        </DynamicKey>
 
 
         <!-- Second row -->
-        <DynamicKey Row="1" Col="0" Width="10">
-            <KeyGroup>arrows</KeyGroup>
-            <Symbol>DownArrowKeyIcon</Symbol>
-            <Action>ArrowDown</Action>
+        <DynamicKey Row="1" Col="0" Width="5">
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>LeftArrowKeyIcon</Symbol>
+            <Action>ArrowLeft</Action>
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>MouseMoveAndLeftDoubleClick</Action>
+            <Symbol>MouseLeftDoubleClickIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
@@ -211,30 +254,38 @@
             <Text>&#13;</Text>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>MouseDrag</Action>
+            <Symbol>MouseDragIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
-            <Symbol>UpArrowKeyIcon</Symbol>
-            <Action>ArrowUp</Action>
+            <Symbol>RightArrowKeyIcon</Symbol>
+            <Action>ArrowRight</Action>
+        </DynamicKey>
+        <DynamicKey Width="5">
         </DynamicKey>
 
 
         <!-- Third row -->
-        <DynamicKey Row="2" Col="0" Width="10">
-            <KeyGroup>arrows</KeyGroup>
-            <Symbol>LeftArrowKeyIcon</Symbol>
-            <Action>ArrowLeft</Action>
+        <DynamicKey Row="2" Col="0" Width="5">
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>DownArrowKeyIcon</Symbol>
+            <Action>ArrowDown</Action>
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>MouseMoveAndMiddleClick</Action>
+            <Symbol>MouseMiddleClickIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
             <Symbol>ShiftIcon</Symbol>
             <Action>LeftShift</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
-        </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="12">
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>functions1</KeyGroup>
@@ -260,7 +311,7 @@
             <Action>F4</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="16">
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>functions1</KeyGroup>
@@ -286,9 +337,7 @@
             <Action>F8</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
-        </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="12">
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
@@ -296,87 +345,90 @@
             <Action>LeftShift</Action>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Action>LookToScrollActive</Action>
+            <Symbol>LookToScrollActiveIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
-            <Symbol>RightArrowKeyIcon</Symbol>
-            <Action>ArrowRight</Action>
+            <Symbol>UpArrowKeyIcon</Symbol>
+            <Action>ArrowUp</Action>
+        </DynamicKey>
+        <DynamicKey Width="5">
         </DynamicKey>
 
 
         <!-- Fourth row -->
-        <DynamicKey Row="3" Col="0" Width="10">
-            <KeyGroup>functions1</KeyGroup>
-            <Symbol>WinIcon</Symbol>
-            <Action>LeftWin</Action>
+        <DynamicKey Row="3" Col="0" Width="5">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
-            <Action>MouseMoveAndLeftClick</Action>
-            <Symbol>MouseLeftClickIcon</Symbol>
+            <Symbol>ArrowPointingToLeftIcon</Symbol>
+            <Action>Home</Action>
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <!-- <KeyGroup>modifiers</KeyGroup>
+            <Label>ᛯ</Label>
+            <ChangeKeyboard BackReturnsHere="True">Vim</ChangeKeyboard> -->
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
             <Action>LeftCtrl</Action>
             <Label>Ctrl</Label>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="7">
         </DynamicKey>
-        <DynamicKey Width="8">
-        </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F9</Label>
             <Action>F9</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F10</Label>
             <Action>F10</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F11</Label>
             <Action>F11</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F12</Label>
             <Action>F12</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F13</Label>
             <Action>F13</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F14</Label>
             <Action>F14</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F15</Label>
             <Action>F15</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="10">
             <KeyGroup>functions1</KeyGroup>
             <Label>F16</Label>
             <Action>F16</Action>
             <Action>BackFromKeyboard</Action>
         </DynamicKey>
-        <DynamicKey Width="8">
-        </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="7">
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
@@ -386,59 +438,92 @@
         <DynamicKey Width="10">
         </DynamicKey>
         <DynamicKey Width="10">
-            <KeyGroup>functions1</KeyGroup>
-            <Label>Alt</Label>
-            <Action>LeftAlt</Action>
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>ArrowPointingToRightIcon</Symbol>
+            <Action>End</Action>
+        </DynamicKey>
+        <DynamicKey Width="5">
         </DynamicKey>
 
 
+        <!-- Fourth row -->
+        <DynamicKey Row="4" Col="0" Width="5">
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>EndIcon</Symbol>
+            <Action>PgDn</Action>
+        </DynamicKey>
+        <DynamicKey Width="10">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="11">
+        </DynamicKey>
+        <DynamicKey Width="11">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="11">
+        </DynamicKey>
+        <DynamicKey Width="11">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="12">
+        </DynamicKey>
+        <DynamicKey Width="10">
+        </DynamicKey>
+        <DynamicKey Width="10">
+            <KeyGroup>arrows</KeyGroup>
+            <Symbol>HomeIcon</Symbol>
+            <Action>PgUp</Action>
+        </DynamicKey>
+        <DynamicKey Width="5">
+        </DynamicKey>
 
-        
 
-
-
-
-
-
-        <DynamicKey Row="4" Col="0" Width="10">
+        <DynamicKey Row="5" Col="0" Width="5">
+        </DynamicKey>
+        <DynamicKey Width="12">
             <KeyGroup>modifiers</KeyGroup>
             <Action>Sleep</Action>
             <Symbol>SleepIcon</Symbol>
         </DynamicKey>
-        <DynamicKey Width="10">
-	    <KeyGroup>arrows</KeyGroup>
-            <Action>MouseMoveAndLeftDoubleClick</Action>
-            <Symbol>MouseLeftDoubleClickIcon</Symbol>
+        <DynamicKey Width="12">
+            <KeyGroup>modifiers</KeyGroup>
+            <Symbol>MouseIcon</Symbol>
+            <ChangeKeyboard>Souris</ChangeKeyboard>
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="8">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
         </DynamicKey>
-        <DynamicKey Width="10">
-        </DynamicKey>
-        <DynamicKey Width="10">
-        </DynamicKey>
-        <DynamicKey Width="10">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Width="12">
             <KeyGroup>modifiers</KeyGroup>
             <Label>Switcher</Label>
             <Plugin>
@@ -453,6 +538,8 @@
                     <Value>-s</Value>
                 </Argument>
             </Plugin>
+        </DynamicKey>
+        <DynamicKey Width="5">
         </DynamicKey>
     </Content>
 </Keyboard>

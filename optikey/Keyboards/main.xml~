@@ -1,5 +1,5 @@
 <Keyboard>
-    <Name>Write</Name>
+    <Name>Main</Name>
     <WindowState>Docked</WindowState>
     <DockSize>Collapsed</DockSize>
     <Position>Bottom</Position>
@@ -8,10 +8,8 @@
     <SymbolMargin>0</SymbolMargin>
     <BorderThickness>0,0,0,0</BorderThickness>
     <Width>100%</Width>
-    <Height>30%</Height>
+    <Height>40%</Height>
 
-    <!--
-    <KeyGroup Name="enter" CompletionTimes="500,400,200" BackgroundColor="#D0D0D0" />
     <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
         BackgroundColor="#FF0000" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="abc" BackgroundColor="#FFFFFF" KeyDisabledBackground="gray"
@@ -21,34 +19,16 @@
     <KeyGroup Name="modifiers" BackgroundColor="#0000FF" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="functions1" BackgroundColor="#D0D0D0" AutoScaleToOneKeyWidth="false" />
     <KeyGroup Name="functions2" BackgroundColor="#FFFF00" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false" /> 
-    -->
-
-    <KeyGroup Name="enter" CompletionTimes="500,400,200" BackgroundColor="#002020" />
-    <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
-        BackgroundColor="#503000" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="abc" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="123" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="symbols" BackgroundColor="#002020" AutoScaleToOneKeyWidth="false"
-        KeyDisabledBackground="black" />
-    <KeyGroup Name="functions1" BackgroundColor="#002040" AutoScaleToOneKeyWidth="false"
-        KeyDisabledBackground="black" />
-    <KeyGroup Name="functions2" BackgroundColor="#004020" AutoScaleToOneKeyWidth="false"
-        KeyDisabledBackground="black" />
-    <KeyGroup Name="arrows" BackgroundColor="#002A55" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="modifiers" BackgroundColor="#003030" AutoScaleToOneKeyWidth="false"
-        KeyDisabledBackground="black" />
+    <KeyGroup Name="arrows" BackgroundColor="#907090" AutoScaleToOneKeyWidth="false" />
 
 
     <Grid>
         <Rows>6</Rows>
-        <Cols>178</Cols>
+        <Cols>168</Cols>
     </Grid>
     <Content>
         <!-- First row -->
-        <DynamicKey Row="0" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Row="0" Col="0" Width="10">
             <KeyGroup>backone</KeyGroup>
             <Action>Delete</Action>
             <Label>Del</Label>
@@ -152,17 +132,13 @@
             <Symbol>MouseRightClickIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="10">
-            <Symbol>BackIcon</Symbol>
-            <Action>BackFromKeyboard</Action>
-        </DynamicKey>
-        <DynamicKey Width="5">
+            <Symbol>MinimiseIcon</Symbol>
+            <ChangeKeyboard BackReturnsHere="True">Minimise</ChangeKeyboard>
         </DynamicKey>
 
 
         <!-- Second row -->
-        <DynamicKey Row="1" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Row="1" Col="0" Width="10">
             <KeyGroup>arrows</KeyGroup>
             <Symbol>LeftArrowKeyIcon</Symbol>
             <Action>ArrowLeft</Action>
@@ -179,8 +155,8 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>é</Label>
-            <Text>é</Text>
+            <Label>_</Label>
+            <Text>_</Text>
             <ShiftDownLabel>8</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
@@ -251,12 +227,12 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>è</Label>
-            <Text>è</Text>
+            <Label>$</Label>
+            <Text>$</Text>
             <ShiftDownLabel>£</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="12">
-            <KeyGroup>enter</KeyGroup>
+            <KeyGroup>functions1</KeyGroup>
             <Symbol>EnterIcon</Symbol>
             <Text>&#13;</Text>
         </DynamicKey>
@@ -270,22 +246,18 @@
             <Symbol>RightArrowKeyIcon</Symbol>
             <Action>ArrowRight</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
-        </DynamicKey>
 
 
         <!-- Third row -->
-        <DynamicKey Row="2" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Row="2" Col="0" Width="10">
             <KeyGroup>arrows</KeyGroup>
             <Symbol>DownArrowKeyIcon</Symbol>
             <Action>ArrowDown</Action>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
-            <Action>MouseMoveAndMiddleClick</Action>
-            <Symbol>MouseMiddleClickIcon</Symbol>
+            <Action>MouseMagnifier</Action>
+            <Symbol>MouseMagnifierIcon</Symbol>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
@@ -300,9 +272,9 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>à</Label>
-            <Text>à</Text>
-            <ShiftDownLabel></ShiftDownLabel>
+            <Label>/</Label>
+            <Text>/</Text>
+            <ShiftDownLabel>/</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>abc</KeyGroup>
@@ -360,8 +332,8 @@
         </DynamicKey>
         <DynamicKey Width="8">
             <KeyGroup>symbols</KeyGroup>
-            <Label>ç</Label>
-            <Text>ç</Text>
+            <Label>-&#x3E;</Label>
+            <Text>-&#x3E;</Text>
             <ShiftDownLabel></ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="8">
@@ -385,22 +357,18 @@
             <Symbol>UpArrowKeyIcon</Symbol>
             <Action>ArrowUp</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
-        </DynamicKey>
 
 
         <!-- Fourth row -->
-        <DynamicKey Row="3" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Row="3" Col="0" Width="10">
             <KeyGroup>arrows</KeyGroup>
             <Symbol>ArrowPointingToLeftIcon</Symbol>
             <Action>Home</Action>
         </DynamicKey>
         <DynamicKey Width="10">
-            <!-- <KeyGroup>modifiers</KeyGroup>
+            <KeyGroup>modifiers</KeyGroup>
             <Label>ᛯ</Label>
-            <ChangeKeyboard BackReturnsHere="True">Vim</ChangeKeyboard> -->
+            <ChangeKeyboard BackReturnsHere="True">Vim</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>functions1</KeyGroup>
@@ -466,25 +434,29 @@
             <Label>Ctrl</Label>
         </DynamicKey>
         <DynamicKey Width="10">
+            <KeyGroup>modifiers</KeyGroup>
+            <Label>🗺️</Label>
+            <ChangeKeyboard BackReturnsHere="True">Write</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
             <Symbol>ArrowPointingToRightIcon</Symbol>
             <Action>End</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
-        </DynamicKey>
 
 
-        <!-- Fourth row -->
-        <DynamicKey Row="4" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="10">
+        <DynamicKey Row="4" Col="0" Width="10">
+            <!-- <KeyGroup>modifiers</KeyGroup>
+            <Action>Sleep</Action>
+            <Symbol>SleepIcon</Symbol> -->
             <KeyGroup>arrows</KeyGroup>
             <Symbol>EndIcon</Symbol>
             <Action>PgDn</Action>
         </DynamicKey>
         <DynamicKey Width="10">
+            <!-- <KeyGroup>modifiers</KeyGroup>
+            <Symbol>MouseIcon</Symbol>
+            <ChangeKeyboard>Souris</ChangeKeyboard> -->
             <KeyGroup>modifiers</KeyGroup>
             <Label>({[</Label>
             <ChangeKeyboard BackReturnsHere="True">Symbols</ChangeKeyboard>
@@ -558,18 +530,27 @@
             <ChangeKeyboard BackReturnsHere="True">Num</ChangeKeyboard>
         </DynamicKey>
         <DynamicKey Width="10">
+            <!-- <KeyGroup>modifiers</KeyGroup>
+            <Label>Switcher</Label>
+            <Plugin>
+                <Name>ExternalProgram</Name>
+                <Method>RUN</Method>
+                <Argument>
+                    <Name>command</Name>
+                    <Value>"C:\Program Files\Tobii Dynavox\Switcher\Tdx.Switcher.exe"</Value>
+                </Argument>
+                <Argument>
+                    <Name>parameters</Name>
+                    <Value>-s</Value>
+                </Argument>
+            </Plugin> -->
             <KeyGroup>arrows</KeyGroup>
             <Symbol>HomeIcon</Symbol>
             <Action>PgUp</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
-        </DynamicKey>
 
 
-        <!-- Sixth row -->
-        <DynamicKey Row="5" Col="0" Width="5">
-        </DynamicKey>
-        <DynamicKey Width="12">
+        <DynamicKey Row="5" Col="0" Width="12">
             <KeyGroup>modifiers</KeyGroup>
             <Action>Sleep</Action>
             <Symbol>SleepIcon</Symbol>
@@ -595,7 +576,7 @@
             <KeyGroup>123</KeyGroup>
             <Label>3</Label>
             <Text>3</Text>
-            <ShiftDownLabel>3</ShiftDownLabel>
+            <ShiftDownLabel>1</ShiftDownLabel>
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>123</KeyGroup>
@@ -656,8 +637,6 @@
                     <Value>-s</Value>
                 </Argument>
             </Plugin>
-        </DynamicKey>
-        <DynamicKey Width="5">
         </DynamicKey>
     </Content>
 </Keyboard>
