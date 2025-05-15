@@ -5,8 +5,8 @@
     <Position>Bottom</Position>
     <BackgroundColor>#000000</BackgroundColor>
     <BorderColor>#000000</BorderColor>
-    <SymbolMargin>0</SymbolMargin>
-    <BorderThickness>0,0,0,0</BorderThickness>
+    <SymbolMargin>12</SymbolMargin>
+    <BorderThickness>1,1,1,1</BorderThickness>
     <Width>100%</Width>
     <Height>30%</Height>
 
@@ -24,27 +24,27 @@
     -->
 
     <KeyGroup Name="backone" LockOnTime="100" CompletionTimes="250,400,200"
-        BackgroundColor="#503000" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="abc" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="123" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="symbols" BackgroundColor="#002020" AutoScaleToOneKeyWidth="false"
+        BackgroundColor="#503000" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false"/>
+    <KeyGroup Name="abc" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false" />
+    <KeyGroup Name="123" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false" />
+    <KeyGroup Name="symbols" BackgroundColor="#002020" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false"
         KeyDisabledBackground="black" />
-    <KeyGroup Name="functions1" BackgroundColor="#002040" AutoScaleToOneKeyWidth="false"
+    <KeyGroup Name="functions1" BackgroundColor="#002040" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false"
         KeyDisabledBackground="black" />
-    <KeyGroup Name="functions2" BackgroundColor="#004020" AutoScaleToOneKeyWidth="false"
+    <KeyGroup Name="functions2" BackgroundColor="#004020" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false"
         KeyDisabledBackground="black" />
-    <KeyGroup Name="arrows" BackgroundColor="#002A55" AutoScaleToOneKeyWidth="false" />
-    <KeyGroup Name="modifiers" BackgroundColor="#003030" AutoScaleToOneKeyWidth="false"
+    <KeyGroup Name="arrows" BackgroundColor="#002A55" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false" />
+    <KeyGroup Name="modifiers" BackgroundColor="#003030" AutoScaleToOneKeyWidth="false" AutoScaleToOneKeyHeight="false"
         KeyDisabledBackground="black" />
 
 
     <Grid>
         <Rows>6</Rows>
-        <Cols>178</Cols>
+        <Cols>194</Cols>
     </Grid>
     <Content>
         <!-- First row -->
-        <DynamicKey Row="0" Col="0" Width="5">
+        <DynamicKey Row="0" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>backone</KeyGroup>
@@ -153,12 +153,12 @@
             <Symbol>MinimiseIcon</Symbol>
             <ChangeKeyboard BackReturnsHere="True">Minimise</ChangeKeyboard>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
 
 
         <!-- Second row -->
-        <DynamicKey Row="1" Col="0" Width="5">
+        <DynamicKey Row="1" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
@@ -268,12 +268,12 @@
             <Symbol>RightArrowKeyIcon</Symbol>
             <Action>ArrowRight</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
 
 
         <!-- Third row -->
-        <DynamicKey Row="2" Col="0" Width="5">
+        <DynamicKey Row="2" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
@@ -383,12 +383,12 @@
             <Symbol>UpArrowKeyIcon</Symbol>
             <Action>ArrowUp</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
 
 
         <!-- Fourth row -->
-        <DynamicKey Row="3" Col="0" Width="5">
+        <DynamicKey Row="3" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
@@ -473,12 +473,12 @@
             <Symbol>ArrowPointingToRightIcon</Symbol>
             <Action>End</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
 
 
         <!-- Fourth row -->
-        <DynamicKey Row="4" Col="0" Width="5">
+        <DynamicKey Row="4" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="10">
             <KeyGroup>arrows</KeyGroup>
@@ -563,12 +563,12 @@
             <Symbol>HomeIcon</Symbol>
             <Action>PgUp</Action>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
 
 
         <!-- Sixth row -->
-        <DynamicKey Row="5" Col="0" Width="5">
+        <DynamicKey Row="5" Col="0" Width="13">
         </DynamicKey>
         <DynamicKey Width="12">
             <KeyGroup>modifiers</KeyGroup>
@@ -658,7 +658,7 @@
                 </Argument>
             </Plugin>
         </DynamicKey>
-        <DynamicKey Width="5">
+        <DynamicKey Width="13">
         </DynamicKey>
     </Content>
 </Keyboard>
